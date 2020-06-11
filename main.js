@@ -1,3 +1,18 @@
+var shar;
+
+es.onclick = function easy(){
+    shar = 75;
+    alert(shar);
+}
+ms.onclick = function easy(){
+    shar = 200;
+    alert(shar);
+}
+hs.onclick = function easy(){
+    shar = 300;
+    alert(shar);
+}
+
 var canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
@@ -90,4 +105,7 @@ function drawGame() {
     snake.unshift(newHead);
 }
 
-let game = setInterval(drawGame, 200);
+
+
+let game = setInterval(drawGame, 150);
+console.log(shar);
